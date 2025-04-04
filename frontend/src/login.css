@@ -1,0 +1,114 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Adjusted for better contrast */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Container */
+.form-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Input fields */
+.input-field {
+  width: 89%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.input-field:focus {
+  border-color: #6c5ce7; /* Enhanced border color */
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(108, 92, 231, 0.2);
+}
+
+/* Error Message */
+.error {
+  color: #e74c3c;
+  font-size: 16px; /* Increased font size for prominence */
+  margin-bottom: 10px;
+  font-weight: 500;
+  background-color: rgba(231, 76, 60, 0.1); /* Added background color */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Login button */
+button {
+  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(108, 92, 231, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #5b50d6, #8f84ff);
+  box-shadow: 0px 6px 15px rgba(108, 92, 231, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Signup link */
+p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+p a {
+  color: #6c5ce7;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #4c45c7;
+  text-decoration: underline;
+}
